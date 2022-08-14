@@ -1,0 +1,302 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    var years = 2025;
+    imprimir("hola amigos");
+    // este código calcula las edades de Juan, Pedro y Carlos
+    imprimir("Juan tiene: " + (years-2000) + " años");
+    imprimir("Pedro tiene: " + (years-1995) + " años");
+    anho = 2030
+    imprimir("Carlos tiene: " + (years-2005) + " años");
+</script>
+<br>
+<br>
+<script>
+
+  pesoCristian=71
+  alturaCristian=1.72
+  ImcCristian=  pesoCristian /(alturaCristian=alturaCristian)
+
+  imprimir(" El IMC de Cristian es:" + ImcCristian)
+  </script>
+  <br>
+
+<script>
+  pesoJose=75
+  alturaJose=1.73
+  ImcJose=  pesoJose /(alturaJose=alturaJose)
+
+  imprimir(" El IMC de Jose es:" + ImcJose)
+
+</script>
+<br>
+<script>
+  function calcularImc(peso,altura, nombre){
+                                    imc= peso / (altura * altura);
+                                    return(imc);
+
+
+  imprimir(" El IMC calculado de:"+ nombre + "es" + Imc);
+                                    }
+  calcularImc(71,1.72, "Cristian");
+  calcularImc(75,1.73, "Jose");
+
+</script>
+
+<h2>El índice de masa corporal (IMC) se calcula dividiendo el peso de una persona por su altura al cuadrado: IMC = peso / (altura * altura)</h2>
+ <p>¿Cuál de las opciones tiene el cálculo del IMC formulado correctamente?</p>
+
+<script>
+  var peso= 75;
+  var altura= 1,71;
+  var imc= peso/( altura * altura);
+</script>
+<br>
+<p>El uso de las parentesis  asegura el calculo de la altura por altura sea procesado primero,</p>
+ <p>para luego dividir el peso por el resultado de (altura*altura) </p>
+<br>
+<br>
+<script>
+  function calcularImc(){
+                          return(peso/(altura*altura));
+  }
+
+imprimir("El promedio del imc  calculado de Cristian y Jose es:" +(calcularImc(71, 1.72)+ calcularImc(75,1.73))/2);
+imprimir("El promedio del imc  calculado de Cristian y Jose es:" +(calcularImc(65, 1.68)+ calcularImc(55,1.60))/2);
+
+</script>
+
+<p>Entonces la buena práctica aprendida es crear funciones objetivas que realicen en máximo una sola acción, </p>
+<p> un solo cálculo y que nos retornen un valor y yo pueda reutilizar esa función en diferentes situaciones.</p>
+<br>
+<br>
+<p>Elena tuvo la idea de crear una función sumarDosNumeros.</p>
+<p>Esta función necesita recibir dos parámetros e imprimir como resultado la suma de esos dos números </p>
+<p> ¿Cuál de las opciones declara y llama de forma correcta esta función?</p>
+<br>
+
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function sumarDosNumeros(numero1, numero2) {
+        imprimir("La suma de los dos números es : " + (numero1 + numero2) );
+    }
+
+    sumarDosNumeros(10, 40);
+</script>
+<br>
+  <p>Correcto! Lo importante aquí es entender que si la función está preparada para recibir dos parámetros,</p>
+  <p>entonces cuando sea llamada necesitamos pasar los dos parámetros. Es claro, como ya vimos, en la declaración de la función,</p>
+  <p>podemos escoger cualquier nombre para los parámetros, pero necesitamos usar esos nombres en los bloques de la función</p>
+  <br>
+  <meta charset="UTF-8">
+
+  <script>
+      function saltarLinea() {
+
+          document.write("<br>");
+      }
+
+      function mostrar(frase) {
+          document.write(frase);
+          saltarLinea();
+      }
+
+      function a(numero1, numero2) {
+          return numero1 + numero2;
+      }
+
+      function b(numero1, numero2) {
+          return numero1 / numero2;
+      }
+
+      var resultado = a(10,20) + b(30,2);
+
+      mostrar(resultado);
+  </script>
+  <br>
+  <p>Vea que en la operación de la variable resultado estamos realizando una operación de suma con el retorno de dos funciones,
+    <p>es decir, el retorno de la función a(10,20) con el retorno de la función b(30,2).</p>
+<p> La primera función devuelve 30 y la segunda 15. Al final tenemos la suma de los dos números, que es 45.</p>
+<br>
+<br>
+<p> No todo el mundo tiene el conocimiento de programación y no es eficiente ni efectivo que la persona
+  entre al código a modificar los valores. La forma para interactuar con el usuario es usando funciones de JavaScript,
+   funciones por defecto que nos ayudan a capturar lo que el usuario quiere colocar.</p>
+
+<p>Entonces voy a venir aquí para mostrarles cuál es esa función, de qué función estamos hablando.
+Voy a entrar al ambiente de desarrollo de aquí de Google. Voy a esconder esos mensajes, esos warnings.
+Y la función de la que estamos hablando se llama prompt. Voy a ejecutar la asignada.</p>
+
+<p>Cuando yo ejecuto aquí con enter me dice que algo está esperando.
+Voy a dar okay, me da vacío. Prompt, ejecutar de nuevo, voy a escribir aquí cualquier cosa,
+un número, me devuelve 12. Entonces yo también puedo hacerle prompt y informe su celular,
+por ejemplo, o como estamos con el índice ya directamente informe su peso.</p>
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+    </style>
+    <title>Calculo de IMC</title>
+</head>
+
+<body>
+    <h1>
+
+        Calculo de IMC.
+
+    </h1>
+    <h2>
+
+        con interacción de usuarios
+
+    </h2>
+    <article>
+
+        <script>
+
+            function saltarLinea() {
+
+                document.write("<br>");
+
+            };
+
+            function imprimir(frase) {
+
+                document.write(frase)
+                document.write("<br>");
+
+            };
+
+            var pesoUsuario = prompt("Cual es su peso?")
+            var alturaUsuario = prompt("Cual es su altura?")
+
+            function calcularImc(peso, altura) {
+
+                imc = (peso / (altura * altura))
+                return (imc)
+
+            }
+
+            imprimir("Su peso es de " + pesoUsuario + " Kg " + " y su altura de " + alturaUsuario + " por lo tanto su IMC es " + calcularImc(pesoUsuario, alturaUsuario))
+        </script>
+    <br>
+    <br>
+    <p>Si queremos mostrar un pop-up, que muestre una pregunta y permita al usuario ingresar con un valor,</p>
+    <p>hacemos uso de la función prompt. Usando la función prompt,</p>
+     <p>¿cuál de las opciones de abajo lee dos números del teclado y muestra la multiplicación de uno por el otro para el usuario?</p>
+<br>
+<script>
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numero1 = prompt("Digite el primer número");
+    var numero2 = prompt("Digite el segundo número");
+
+    mostrar("El valor de " + numero1 + " veces " + numero2 + " es: " + (numero1 * numero2));
+
+</script>
+<br>
+<p>  Correcto! Estamos obteniendo el retorno de la función prompt y
+  estamos asignando las respectivas variables numero1 y numero2.</p>
+  <br>
+  <br>
+
+
+<h4>PROGRAMA CALCULAR IMC</h4>
+
+<script>
+
+	function saltarLinea() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+	}
+
+	function calcularImc(peso,altura) {
+
+		return (peso / (altura * altura));
+
+	}
+
+	nombre = prompt("infome su nombre")
+	pesoInformado = prompt(nombre + ", infome su peso")
+	alturaInformado = prompt(nombre + ",infome su altura")
+
+	imcCalculado = calcularImc(pesoInformado,alturaInformado)
+
+	imprimir(nombre + ", su imc calculado es: " + imcCalculado);
+
+</script>
+<p></p>
+<p>] Bueno amigos, hasta aquí hemos terminado la primera etapa de nuestro curso de Lógica de programación. En este curso hemos empezado desde lo más básico, desde cero básicamente, repasando todos los conceptos que necesitamos inicialmente para volvernos programadores.
+
+<p>Usamos el browser en este caso, nuestro navegador Chrome, como nuestro compilador, como nuestro lector y ejecutor del código. Vimos que nuestro navegador es una herramienta que puede ser usada en este caso como un compilador y que es una herramienta políglota, entiende varios idiomas.
+
+<p>En esta oportunidad trabajamos con HTML, aprendimos las etiquetas HTML, a dar algún formato en este caso a los programas que estamos creando que aparecen como en su gran páginas, páginas web, y aprendimos a programar, a usar códigos en JavaScript para hacer esa comunicación, esa conexión entre nuestro programa y nuestro navegador.
+
+<p>Aprendimos esa diferencia, que las etiquetas HTML nos ayudan a formatear nuestra página y crean un link, un vínculo entre nuestro código JavaScript que es donde hacemos todas las ejecuciones de actividades con HTML, que se comunica en este caso con el compilador.
+
+<p>Vimos buenas prácticas de programación, convenciones de programadores, de las cuales el objetivo es padronizar nuestro código y que nuestro código pueda ser reutilizado por otra persona o inclusive que otra persona tenga capacidad de dar mantenimiento.
+
+<p> Y también, de aquí a dos, tres, cuatro meses, si tengo que modificar, alterar ese código queda mucho más fácil esa actividad en el futuro porque voy a tener un padrón de nomenclaturas, un padrón de buenas prácticas que me van a ayudar a hacer más ágil en ese mantenimiento del código. Aprendimos a concatenar, a hacer concatenaciones de texto, de string con string, y también de string con números.
+
+<p>Vimos que cuando concatenamos un número con un string, con una cadena de texto, nos devuelve una cadena de texto, entonces si concateno un número 20 con una palabra, el resultado final va a ser una cadena de texto. Aprendimos a usar variables, a volver nuestro programa dinámico. Reforzamos bastante ese tema de variables y que podemos usar diferentes tipos de variables, sean números, textos.
+
+<p>El uso de variables ayuda a que nuestro programa sea dinámico. Otro concepto fundamental que vimos son el tema de funciones. Aprendimos a crear algunas funciones, funciones sin parámetros, que nos devuelven la ejecución de una actividad, funciones con parámetros donde le enviamos a nuestra función algún parámetro que puede ser un número, un texto o varios números o varios textos, y nos retorna algún valor.
+
+<p>La función tiene esa capacidad, de solo ejecutar o de ejecutar una serie de pasos y inclusive después retornarte algún valor. Mi objetivo de usar funciones es que nuestro código sea optimizado, reutilizar código, no tener que reescribir cien mil líneas de código sino que crear una combinación de variables con funciones que nos ayuden a reutilizar las funciones en diferentes etapas de nuestro código o para realizar tareas repetitivas.
+
+<p>Practicamos. En nuestra última aula hicimos algunos ejercicios, calculando el índice de masa corporal. Creamos una fórmula que nos calculaba el índice de masa corporal, e inclusive hicimos un programa que sea interactivo con el usuario, que le pida: "dé su nombre, dé su peso" o "dé su altura" y el programa automáticamente calculaba el índice de masa corporal y devolvía al usuario en este caso el cálculo realizado.
+
+<p>Entonces amigos, hasta aquí hemos terminado la etapa 1. Hagan todos los ejercicios. Tenemos bastante material en la plataforma para que practiquen y refuercen todos estos conceptos, y en la etapa 2 vamos a continuar reforzando todos estos conceptos que hemos aprendido, vamos a ampliar un poco más, vamos a subir el nivel de complejidad a nuestros conceptos de programación y vamos a continuar realizando muchos ejercicios. </p>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juego de adivinacion</title>
+</head>
+
+<body>
+    <h1>Juego de adivinación</h1>
+
+    <h3>Adivinar un número pensado</h3>
+
+    <br>
+    <br>
+    <br>
+<script>
+
+    //No es aconsejable colocar muchas instrucciones dentro de las funciones, como práctica recomendable.
+        function saltarLinea() {
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+
+        var numeroPensado = Math.round(Math.random()*10);
+        //Math.round se usa para redondear los números al entero por ley de arastre.
+        //Math.random() nos devuelve un número aleatorio con decimales.
+        //Math.round(Math.random()*10) nos entrega un numero aleatorio entero limitado a x cantidad de veces por el que se ubica pasando los parentesis.
+        var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+        if (numeroPensado == numeroLanzado){
+
+            imprimir("Usted acertó.");
+        }
+
+        else {
+            imprimir("usted erró, el número pensado era " + numeroPensado);
+
+        }
+
+
+</script>
+<script>
+
+
+var nombre = prompt("digite su nonbre");
+var pesoInformado = prompt(nombre + " digite su peso en kg: ");
+var alturaInformado = prompt(nombre + " digite su estatura en mtrs: ");
+
+imc_Alejo = calcularImc(pesoInformado,alturaInformado);
+
+
+imprimir(nombre + " el IMC calculado es: " + imc_Alejo);
+
+if (imc_Alejo <= 18.5) {
+    saltoLinea()
+    imprimir("Insuficiensica ponderal");
+} else if (imc_Alejo >= 18.5 && imc_Alejo < 24.9) {
+    saltoLinea()
+    imprimir("Intervalo normal");
+} else if (imc_Alejo >= 25.0) {
+    saltoLinea()
+    imprimir("estas en sobre peso: ");
+} else if (imc_Alejo <= 29.9) {
+    saltoLinea()
+    imprimir("Preobesidad");
+}
+</script>
+</body>
+</html>

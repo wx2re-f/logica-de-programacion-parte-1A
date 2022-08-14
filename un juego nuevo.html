@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+
+<h1>Juego de loteria</h1>
+
+
+<script>
+
+    function saltarLinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+    } // Fin de funcion sartarLinea
+
+    function imprimir (frase) {
+
+        document.write(frase);
+        saltarLinea();
+
+    }
+
+    function sortea(n) {
+        numeroSorteo  = Math.round(Math.random()*n);
+        return(numeroSorteo);
+    }
+
+    var numeroPensado  = sortea(10); // el pararametro indica la cantidad de  Emisiones Exitantes o numeros a escoger
+
+    var numeroLanzado = parseInt(prompt("Ingrese un el numero que tienes, pasa saber si eres Ganador"));
+
+    if (numeroPensado == numeroLanzado) {
+        imprimir("Felicidades has Ganado $100");
+    }
+
+    if (numeroPensado  != numeroLanzado) {
+        imprimir("Lo siento, pero continua participando");
+        imprimir("El numero Ganador es: " + numeroPensado);
+
+    }
+
+</script>

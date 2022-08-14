@@ -1,0 +1,104 @@
+<meta charset="UTF-8">
+<h1>mi primer programa HTML!!</h1>
+<br>
+<br>
+sera esto realmente un programa?
+<h1>Bienvenido</h1>
+Visite <a href="http://www.aluracursos.com"> Alura Latam</a>
+
+<script> alert("Esto si es lenguaje de programacion")
+
+</script>
+
+<br>
+<meta charset="UTF-8">
+<h1>PROGRAMA</h1>
+
+<script>
+    var promedio = 0
+    var fecha = new Date();
+    var anio = fecha.getFullYear();
+
+    var edadh1 = 20
+    var edadh2 = 25
+    var edadh3 = 15
+
+    var edadm1 = 18
+    var edadm2 = 22
+    var edadm3 = 15
+
+    var nomh1 = "Juan"
+    var nomh2 = "Pedro"
+    var nomh3 = "Carlos"
+
+    var nomm1 = "Jimena"
+    var nomm2 = "Paola"
+    var nomm3 = "Laura"
+
+    document.write("<br> Año actual...",anio,"<br>");
+
+    document.write("<br>", nomh1, " nació en ",(anio-edadh1)," tiene ",edadh1," años.");
+    document.write("<br>", nomh2, " nació en ",(anio-edadh2)," tiene ",edadh2," años.");
+    document.write("<br>", nomh3, " nació en ",(anio-edadh3)," tiene ",edadh3," años.");
+
+    promedio = Math.round((edadh1+edadh2+edadh3)/3)
+
+    document.write("<br><br>El promedio de edades en hombres es... ", promedio,"<br>")
+
+    document.write("<br>", nomm1, " nació en ",(anio-edadm1)," tiene ",edadm1," años.");
+    document.write("<br>", nomm2, " nació en ",(anio-edadm2)," tiene ",edadm2," años.");
+    document.write("<br>", nomm3, " nació en ",(anio-edadm3)," tiene ",edadm3," años.");
+
+    promedio = Math.round((edadm1+edadm2+edadm3)/3)
+
+    document.write("<br><br>El promedio de edades en mujeres es...", promedio)
+</script>
+<meta charset="UTF-8">
+<h1>Usando JavaScript por primera vez</h1>
+<script>
+    alert("La edad de Paola es");
+    alert("?");
+</script>
+<script>
+        var years = 2020;
+
+        document.write("Juan tiene :"+(years-2000)+"años");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("Pedro tiene :"+(years-1995)+"años");
+
+        years= 2030
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("Carlos tiene :"+(years-2005)+"años");
+        document.write("<br>");
+        document.write("<br>");
+
+        years=2020
+        document.write("Jimena tiene :"+(years-2010)+"años");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("Paola tiene :"+(years-1995)+"años");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("Laura tiene :"+(years-2005)+"años");
+        document.write("<br>");
+        document.write("<br>");
+</script>
+<script>
+        var edadJimena=10;
+        var edadPaola=25;
+        var edadLaura=15;
+
+        var nombre1="Jimena";
+        var nombre2="Paola";
+        var nombre3="Laura";
+
+        promedio = (edadJimena+edadPaola+edadLaura)/3
+
+        	document.write("El promedio de las edades de " + nombre1 + ", " + nombre2 + " y " + nombre3 + " es: " + Math.round(promedio));
+        	document.write("<br>");
+
+
+</script>

@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<h1>Todos los numeros pares del 1 al 100</h1>
+<!-- Usando la instrucción while, imprime todos los números pares del 1 al 100 y al final imprime la palabra "FIN". -->
+<!-- La variable la declaré fuera, en cero y este contador aumentando después de imprimir-->
+<script>
+
+    function imprimir(frase) {
+        document.write(frase);
+        document.write("<br>");
+    }
+
+    var contador = 0;
+
+    while(contador <= 100){
+        imprimir(contador);
+        contador = contador + 2;
+
+    }
+
+    imprimir("fin");
+
+</script>

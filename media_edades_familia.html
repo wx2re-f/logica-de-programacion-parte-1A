@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<h2>Programa - Media edades familia</h2>
+<script>
+    function saltoln(lineas)
+    {
+        for (var i = 0; i < lineas; i++) {document.write("<br>");}
+    }
+
+    function imprimir(texto)
+    {
+        document.write(texto);
+    }
+
+    var personas = parseInt(prompt("Cantidad de personas en la familia"))
+    var familia = [...Array(personas)].map(x => Array(2).fill(0))
+    var totalpeso = 0
+    var media = 0
+
+    //Preguntar datos
+    for (var i = 0; i < personas; i++)
+    {
+        familia[i][1] = parseInt(prompt("Edad del familiar " + (i+1)));
+        familia[i][2] = prompt("Nombre del familiar " + (i+1));
+    }
+
+    for (var i = 0; i < personas; i++)
+    {
+        imprimir("Peso de " + familia[i][2] + " es " + familia[i][1]);
+        saltoln(1);
+        totalpeso = totalpeso + familia[i][1];
+    }
+
+    imprimir("La média de peso de la familia es: " + totalpeso/personas);
+ </script>

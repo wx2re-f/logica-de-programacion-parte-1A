@@ -1,0 +1,133 @@
+<meta charset="UTF-8">
+<h1> JavaScript: Funciones. </h1>
+<script>
+    alert("Bienvenidos");
+
+</script>
+
+<script>
+    var edad1 = 10;
+    var edad2 = 20;
+    var edad3 = 30;
+    var totalEdades = edad1 + edad2 + edad3;
+    var promedioEdades = totalEdades/3;
+    alert("***Total de edades es " + totalEdades + "***");
+    alert("***La media de las edades es " +  promedioEdades + "***");
+</script>
+<br>
+<script>
+  function saltarlinea(){
+
+    document.write(¨<br>¨);
+    document.write(¨<br>¨);
+    document.write(¨<br>¨);
+  }
+  function imprimir(frase){
+                            document.write(frase)
+                            saltarlinea();
+  }
+
+     imprimir(¨hola amigos¨);
+     saltarlinea();
+
+        var years = 2020;
+        var saltodelinea= "<br><br><br>"
+
+        imprimir("Juan tiene :"+(years-2000)+"años");
+        saltarlinea();
+
+        imprimir("Pedro tiene :"+(years-1995)+"años");
+        saltarlinea();
+
+        years= 2030
+
+        document.write(saltodelinea);
+
+        document.write("Carlos tiene :"+(years-2005)+"años");
+        document.write(saltodelinea);
+
+</script>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+    }
+
+    var miEdad = 18;
+    var edadHermano = 15;
+
+    imprimir("Nuestra diferencia de edad es " + (miEdad - edadHermano));
+ </script>
+<br>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+    }
+
+    var miEdad = 42;
+    var edadHermano = 40;
+
+    imprimir("Nuestra diferencia de edad es " + (miEdad - edadHermano));
+ </script>
+<br>
+
+
+<h7>Calcula tu IMC</h7>
+
+<br>
+<br>
+<br>
+Seguro te haz preguntado ¿Cuál es mi IMC? Pues descúbrelo Aquí
+(Si no sabes que es el IMC puedes entrar a este <a href="https://es.wikipedia.org/wiki/%C3%8Dndice_de_masa_corporal"> enlace</a>)
+<br>
+<br>
+<br>
+<script>
+
+    function line_jump() {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    //Este código es para imprimir
+
+    function imprimir(frase) {
+
+    document.write(frase);
+    line_jump();
+
+    }
+
+    function calculateIMC(peso,altura) {
+
+    IMCpersona = peso / (altura * altura);
+    return (peso / (altura * altura));
+
+    }
+
+    nombreinformado = prompt("Escriba su nombre por favor:")
+    pesoinformado = prompt(nombreinformado + " Escriba su peso por favor:")
+    alturainformado = prompt(nombreinformado + " Escriba su altura por favor:")
+    alert(nombreinformado + " Ahora podrás saber su IMC :3 ")
+    imprimir(nombreinformado + " ¡Muchas gracias por usar nuestra página!")
+    imc_ready = calculateIMC(pesoinformado,alturainformado)
+    imprimir("Tu IMC es: " + Math.round(imc_ready))
+    nombreinformado2 = prompt("Escriba el nombre de su amigo por favor:")
+    pesoinformado2 = prompt(" Escriba el peso de " + nombreinformado2 + " por favor:")
+    alturainformado2 = prompt(" Escriba la altura de " + nombreinformado2 + " por favor:")
+    alert(nombreinformado + " Ahora podrás saber el promedio de IMC tuyo y tu amigo :3 ")
+    imc_ready2 = calculateIMC(pesoinformado2,alturainformado2)
+    imprimir("El promedio de IMC entre tu y tu amigo es de: " + Math.round((imc_ready + imc_ready2)/2))
+
+</script>
